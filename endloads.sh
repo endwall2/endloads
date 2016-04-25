@@ -243,7 +243,7 @@ echo "Downloading "$link""
 # initiate download and change user agent
 
   # initate download +tor + random agent
-  torsocks wget --user-agent "$UA" "$link" 
+  torsocks wget --user-agent='"$UA"' "$link" 
 
 done
 # sometimes the download cuts off so don't delete the file until its all done
