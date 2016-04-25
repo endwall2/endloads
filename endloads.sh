@@ -2,7 +2,7 @@
 #################################################################################################################################################
 # NAME: endloads.sh
 # TYPE: BOURNE SHELL SCRIPT
-# DESCRIPTION: Downlods filess from an input file url list
+# DESCRIPTION: Download files from an input file url list
 #              by randomizing lists and torsocks, wget and 
 #              a random user agent
 #
@@ -26,8 +26,8 @@
 #  Do the following at a command prompt
 #
 #  $  mkdir ~/bin
-#  $  chmod u+wrx endtube.sh
-#  $  cp endtube.sh ~/bin
+#  $  chmod u+wrx endloads.sh
+#  $  cp endloads.sh ~/bin
 #  $  export PATH=$PATH:~/bin
 #  $  cd Downloads
 #  $  emacs/nano/leafpad etc  links.txt  
