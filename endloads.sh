@@ -6,11 +6,14 @@
 #              by randomizing lists and torsocks, wget and 
 #              a random user agent
 #
-# AUTHOR:  ENDWALL DEVELOPEMENT TEAM
+# AUTHOR:  THE ENDWARE DEVELOPEMENT TEAM
 # CREATION DATE:   APRIL 9 2016
 # VERSION: 0.11
-# REVISION DATE: MAY 2 2015
+# REVISION DATE: MAY 5 2016
+# COPYRIGHT: THE ENDWARE DEVELOPMENT TEAM, 2016
+#
 # 
+#
 # CHANGE LOG:  - Added extra user-agents
 #              - Forked from endtube
 #
