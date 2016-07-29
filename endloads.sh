@@ -12,7 +12,7 @@
 # REVISION DATE: JULY 28 2016
 # COPYRIGHT: THE ENDWARE DEVELOPMENT TEAM, 2016
 #
-# CHANGE LOG:   - Fixed a bug with the UA
+# CHANGE LOG:   - Fixed a bug with the UA + Added min_delay, max_delay variables
 #               - Updated Acknowledgements
 #               - Updated EULA
 #               - Added extra user-agents
@@ -158,6 +158,8 @@
 Lunsort=$1
 Punsort=$2
 nargs="$#"
+min_delay=20
+max_delay=120
 
 # randomly sort these lists
 sort -R $Lunsort > temp1.srt
@@ -308,7 +310,7 @@ fi
 echo "$UA"
 
 # generate a random number time delay
-delay=$( expr 10 + $(head -c 2 /dev/urandom | od -A n -i) % 120 | awk '{print $1}')
+delay=$( expr "$min_delay" + $(head -c 2 /dev/urandom | od -A n -i) % "$max_delay" | awk '{print $1}')
 echo "Delaying download for "$delay" seconds"
 # wait by delay time
 sleep "$delay"
