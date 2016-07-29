@@ -8,11 +8,12 @@
 #
 # AUTHOR:  THE ENDWARE DEVELOPMENT TEAM
 # CREATION DATE: APRIL 9 2016
-# VERSION: 0.15
-# REVISION DATE: JULY 21 2016
+# VERSION: 0.16
+# REVISION DATE: JULY 28 2016
 # COPYRIGHT: THE ENDWARE DEVELOPMENT TEAM, 2016
 #
-# # CHANGE LOG: - Updated Acknowledgements
+# CHANGE LOG:   - Fixed a bug with the UA
+#               - Updated Acknowledgements
 #               - Updated EULA
 #               - Added extra user-agents
 #               - Forked from endtube
@@ -316,7 +317,7 @@ echo "Downloading "$link""
 # initiate download and change user agent
 
 # initate download +tor + random agent
-torsocks wget --user-agent='"$UA"' "$link" 
+torsocks wget --user-agent="$UA" "$link" 
 
 done
 # sometimes the download cuts off so don't delete the file until its all done
