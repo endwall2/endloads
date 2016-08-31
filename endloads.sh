@@ -268,12 +268,12 @@ echo "$UA"
  then 
  HEAD="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\Accept-Language: en-US,en;q=0.5\Accept-Encoding: gzip, deflate\Connection: keep-alive"
  # initate curl download +tor + random agent
- torsocks wget --user-agent="$UA" --header="$HEAD" "$link" 
+ torsocks -i wget --user-agent="$UA" --header="$HEAD" "$link" 
  else
- torsocks wget --user-agent="$UA" "$link" 
+ torsocks -i wget --user-agent="$UA" "$link" 
  fi
 else 
- torsocks wget "$link"
+ torsocks -i wget "$link"
 fi 
 
 done
