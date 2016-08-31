@@ -8,11 +8,12 @@
 #
 # AUTHOR:  THE ENDWARE DEVELOPMENT TEAM
 # CREATION DATE: APRIL 9 2016
-# VERSION: 0.21
+# VERSION: 0.22
 # REVISION DATE: AUGUST 25 2016
 # COPYRIGHT: THE ENDWARE DEVELOPMENT TEAM, 2016
 #
-# CHANGE LOG:   - Rewrote input arguments section + added exit node pull option --exitnode, --uarand, --no-agent, --no-header, --help
+# CHANGE LOG:   - torsocks -i --isolate flag on main download 
+#               - Rewrote input arguments section + added exit node pull option --exitnode, --uarand, --no-agent, --no-header, --help
 #               - USERAGENTS path variable 
 #               - Moved user agents to user_agents.txt
 #               - Default to tor browser UA -r flag for random UA, + tor browser header
